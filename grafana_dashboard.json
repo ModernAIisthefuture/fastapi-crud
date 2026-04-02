@@ -1,0 +1,17 @@
+{
+  "dashboard": {
+    "title": "Loan API",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Requests",
+        "targets": [{"expr": "fastapi_requests_total"}]
+      },
+      {
+        "type": "graph",
+        "title": "Latency",
+        "targets": [{"expr": "fastapi_request_duration_seconds_count"}]
+      }
+    ]
+  }
+}
